@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<script type="text/javascript">
+function rel() {
+/* Hier kann die Zeit eingestellt werden (in Millisekunden)
+Wird Null (0) angegeben, so wird der Code ohne Pause ausgeführt */
+window.setTimeout("raw()", 1000);
+}
+
+function raw() {
+/* Hier der Code welcher ausgeführt werden soll
+Als Beispiel wird hier die Hintergrundfarbe gewechselt */
+document.body.bgColor="#"+Math.random()*9+"99999";
+
+rel();
+}
+raw();
+</script>
+
+</body>
+</html>
